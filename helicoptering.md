@@ -12,7 +12,7 @@ When both were completed, so was this challenge
 
 ![Pasted image 20230523132832](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/b9718be9-48c9-4cc8-9914-4abf55ec15f0)
 
- As shown in the screenshot above, we have a rule that checks to see if any string is not explicitly localhost, then it is true, and then access to the resource is denied by a 403 FORBIDDEN 
+ As shown in the image above, we have a rule that checks to see if any string is not explicitly localhost, then it is true, and then access to the resource is denied by a 403 FORBIDDEN 
 
 
 I tried multiple different payloads before really analyzing the rule before I learned these are ruleset conditions written in the .htaccess file inside of the webserver. 
@@ -27,6 +27,8 @@ Breaking down %{HTTP_HOST} !^\localhost$:
 
 - I decided the best way to change the `Host` header value was to do it in BurpSuite, so I opened up BurpSuite to change the `Host` header
 
+### Burpsuite 
+
 
 ![Pasted image 20230523133255](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/e6648a0b-7b51-47bd-a0f5-306e78576d0c)
 
@@ -36,9 +38,9 @@ Breaking down %{HTTP_HOST} !^\localhost$:
 As we can see, its no wonder we are getting a 403 Forbidden, the `Host` header value is set to localhost:1337, which means that this matches the rule in the .htaccess rewrite condition
 
 To rehash: 
-	- %{HTTP_HOST} !^\localhost$ is matching to DENY all access to the resource if the `Host` header value is NOT "localhost"
-	- This is followed by the next line of the file that states the RewriteRule "." "-" \[\F\], the "F" means forbidden here, so the RewriteRule is what is enforced based on what is met by the logic of the Rewrite condition. 
-	- When \[F] is enforced, all access is redirected to 403 Forbidden when the `Host` header is NOT <u>localhost EXACTLY</u>
+	 %{HTTP_HOST} !^\localhost$ is matching to DENY all access to the resource if the `Host` header value is NOT "localhost"
+	 This is followed by the next line of the file that states the RewriteRule "." "-" \[\F\], the "F" means forbidden here, so the RewriteRule is what is enforced based on what is met by the logic of the Rewrite condition. 
+	 When \[F] is enforced, all access is redirected to 403 Forbidden when the `Host` header is NOT <u>localhost EXACTLY</u>
 
 
 ![Pasted image 20230523134139](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/83e79d4c-4b9a-469b-baa1-8d04a639d6ef)
@@ -87,7 +89,7 @@ Just as in part1 I used burpsuite on the page
 
 
 
-Burpsuite:
+### Burpsuite:
 
 ![Pasted image 20230523140245](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/256eab31-aafe-425c-81f7-122c9455ac3f)
 
