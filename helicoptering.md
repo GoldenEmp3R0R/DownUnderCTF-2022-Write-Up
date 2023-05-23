@@ -1,4 +1,4 @@
-![[Pasted image 20230523132557.png]]
+Pasted image 20230523132557.png
 
 This challenge was broken up into partial flags where you would obtain a piece of the flag for completing both part one and two. 
 
