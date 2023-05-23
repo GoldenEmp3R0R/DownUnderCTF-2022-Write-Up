@@ -1,4 +1,5 @@
-Pasted image 20230523132557.png
+
+![Pasted image 20230523132550](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/9a9bebdc-c4b6-4c1c-9753-85dda462eba6)
 
 This challenge was broken up into partial flags where you would obtain a piece of the flag for completing both part one and two. 
 
@@ -9,7 +10,7 @@ When both were completed, so was this challenge
 
 ## Part 1
 
- ![[Pasted image 20230523132832.png]]
+ ![Pasted image 20230523132832.png]
  As shown in the screenshot above, we have a rule that checks to see if any string is not explicitly localhost, then it is true, and then access to the resource is denied by a 403 FORBIDDEN 
 
 
