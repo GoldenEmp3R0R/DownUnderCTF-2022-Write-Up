@@ -37,10 +37,16 @@ Breaking down %{HTTP_HOST} !^\localhost$:
 
 As we can see, its no wonder we are getting a 403 Forbidden, the `Host` header value is set to localhost:1337, which means that this matches the rule in the .htaccess rewrite condition
 
+
+
+
 To rehash: 
 	 %{HTTP_HOST} !^\localhost$ is matching to DENY all access to the resource if the `Host` header value is NOT "localhost"
 	 This is followed by the next line of the file that states the RewriteRule "." "-" \[\F\], the "F" means forbidden here, so the RewriteRule is what is enforced based on what is met by the logic of the Rewrite condition. 
 	 When \[F] is enforced, all access is redirected to 403 Forbidden when the `Host` header is NOT <u>localhost EXACTLY</u>
+
+
+
 
 
 ![Pasted image 20230523134139](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/83e79d4c-4b9a-469b-baa1-8d04a639d6ef)
@@ -49,7 +55,14 @@ To rehash:
 If we remove :1337 from localhost in the `Host` header and forward the request, we won't pass the Rewrite Condition because the `Host` header value does not match what the server is expecting
 
 
+
+
+
 ![Pasted image 20230523134258](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/9691e903-5436-4829-9b03-189d8d353682)
+
+
+
+
 
 
 We obtain part 1 of the flag:
