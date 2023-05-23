@@ -27,7 +27,7 @@ following page when we enter the webpage for the challenge:
 
 
 
-There is not much on the page, and there are no cookies created for a session, or any interesting artifacts in the page source worth looking into. 
+- There are no cookies created for a session, or any interesting artifacts in the page source worth looking into. 
 
 - There are few interactable elements on the page. There is a Login Button, a Sign Up button, and a Home button that just redirects to the main page.
 
