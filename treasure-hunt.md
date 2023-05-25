@@ -5,7 +5,8 @@ THE TIME HAS COME
 TO FIND THE `ONE PIECE!!!`
 
 
-![Pasted image 20230523145211](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/780835e4-72d9-4e63-9d31-e1df8666c41f)
+![240404844-ce227b9f-4e45-4d2d-897e-33b3ed08b37a](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/d4730ad2-f3ab-4904-a1ff-97b18244bff1)
+
 
 
 
