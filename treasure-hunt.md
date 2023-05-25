@@ -98,7 +98,7 @@ In order to change the token, I needed to obtain the secret value of the jwt tok
 I took the jwt to hashcat and GPU cracked the jwt's secret almost instantly.
 
 
-![Pasted image 20230523151637](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/ce227b9f-4e45-4d2d-897e-33b3ed08b37a)
+![240404844-ce227b9f-4e45-4d2d-897e-33b3ed08b37a](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/de7bd6b2-3903-4ca7-9681-b93359111967)
 
 
 As seen in the image above. the secret used to sign the token was...........onepiece lmao I honestly was dying for a hot minute after I saw this.
