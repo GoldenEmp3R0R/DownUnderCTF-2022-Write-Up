@@ -5,11 +5,6 @@ THE TIME HAS COME
 TO FIND THE `ONE PIECE!!!`
 
 
-![240404844-ce227b9f-4e45-4d2d-897e-33b3ed08b37a](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/d4730ad2-f3ab-4904-a1ff-97b18244bff1)
-
-
-
-
 - Note: Listening to the music is critical to solving the challenge
 
 
@@ -99,7 +94,7 @@ In order to change the token, I needed to obtain the secret value of the jwt tok
 I took the jwt to hashcat and GPU cracked the jwt's secret almost instantly.
 
 
-![240404844-ce227b9f-4e45-4d2d-897e-33b3ed08b37a](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/de7bd6b2-3903-4ca7-9681-b93359111967)
+![240404844-ce227b9f-4e45-4d2d-897e-33b3ed08b37a](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/d4730ad2-f3ab-4904-a1ff-97b18244bff1)
 
 
 As seen in the image above. the secret used to sign the token was...........onepiece lmao I honestly was dying for a hot minute after I saw this.
