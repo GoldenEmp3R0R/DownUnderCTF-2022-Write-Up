@@ -7,7 +7,7 @@ TO FIND THE `ONE PIECE!!!`
 
 ![Pasted image 20230523145211](https://github.com/GoldenEmp3R0R/DownUnderCTF-2022-Write-Up/assets/125948172/780835e4-72d9-4e63-9d31-e1df8666c41f)
 
-- Note: Listening to the music is critical to solving the challenge
+- Note: Listening to the music is critical to solving the challenge (not really but it makes it 10x better haha)
 
 
 
